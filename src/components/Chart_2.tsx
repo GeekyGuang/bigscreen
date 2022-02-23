@@ -1,0 +1,59 @@
+import React, { useEffect, useRef } from 'react'
+import * as echarts from 'echarts'
+import { px } from '../shared/px'
+import { createEchartsOptions } from '../shared/create-echart-options'
+
+export const Chart2 = () => {
+  const divRef = useRef(null)
+  useEffect(() => {
+    const myChart = echarts.init(divRef.current)
+    const option = createEchartsOptions({
+      xAxis: {
+        type: 'value',
+        boundaryGap: [0, 0.01],
+        splitLine: { show: false },
+        axisLabel: { show: false },
+      },
+      yAxis: {
+        type: 'category',
+        axisTick: { show: false },
+        data: [
+          '城关区公安局',
+          '七里河区公安局',
+          '西固区公安局',
+          '安宁区公安局',
+          '红古区公安局',
+          '永登县公安局',
+          '皋兰县公安局',
+          '榆中县公安局',
+          '新区公安局',
+        ],
+        axisLabel: {
+          formatter(val) {
+            return val.replace('公安局', '\n公安局')
+          },
+        },
+      },
+      series: [
+        {
+          name: '2011年',
+          type: 'bar',
+          data: [1, 5, 3, 4, 5, 9, 7, 8, 9],
+        },
+        {
+          name: '2012年',
+          type: 'bar',
+          data: [2, 3, 2, 7, 3, 7, 9, 6, 12],
+        },
+      ],
+    })
+
+    myChart.setOption(option)
+  }, [])
+  return (
+    <div className="bordered 破获排名">
+      <h2>案件破获排名</h2>
+      <div ref={divRef} className="chart"></div>
+    </div>
+  )
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import './home.scss'
 import headerBg from '../images/header.png'
 import { Chart1 } from '../components/Chart_1'
+import { Chart2 } from '../components/Chart_2'
 
 export const Home = () => {
   return (
@@ -10,6 +11,7 @@ export const Home = () => {
       <main>
         <section className="section1">
           <Chart1 />
+          <Chart2 />
         </section>
         <section className="section2 bordered"></section>
         <section className="section3 bordered"></section>
