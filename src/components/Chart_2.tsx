@@ -34,16 +34,47 @@ export const Chart2 = () => {
           },
         },
       },
+      legend:{
+        bottom: 0,
+        right: 0,
+        itemHeight: 8,
+        itemWidth: 16,
+        textStyle: {
+          color: '#79839E'
+        }
+      },
       series: [
         {
-          name: '2011年',
+          name: '2020年',
           type: 'bar',
           data: [1, 5, 3, 4, 5, 9, 7, 8, 9],
+          itemStyle: {
+            normal: {
+              color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
+                offset: 0,
+                color: '#2034f9'
+              }, {
+                offset: 1,
+                color: '#04a1ff'
+              }]),
+            }
+          }
         },
         {
-          name: '2012年',
+          name: '2021年',
           type: 'bar',
           data: [2, 3, 2, 7, 3, 7, 9, 6, 12],
+          itemStyle: {
+            normal: {
+              color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
+                offset: 0,
+                color: '#b92ae8'
+              }, {
+                offset: 1,
+                color: '#6773e7'
+              }]),
+            }
+          }
         },
       ],
     })
