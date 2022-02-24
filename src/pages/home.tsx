@@ -8,7 +8,9 @@ export const Home = () => {
   const year = new Date().getFullYear()
   return (
     <div className="home">
-      <header style={{ backgroundImage: `url(${headerBg})` }} />
+      <header style={{ backgroundImage: `url(${headerBg})` }} >
+        <h1>西虹市公安局合成作战平台</h1>
+      </header>
       <main>
         <section className="section1">
           <Chart1 />
@@ -20,7 +22,7 @@ export const Home = () => {
         <section className="section5 bordered"></section>
       </main>
       <footer>
-      &copy; 某市公安局大数据中心 2020-{year}
+      &copy; 西虹市公安局大数据中心 2020-{year}
       </footer>
 
     </div>
