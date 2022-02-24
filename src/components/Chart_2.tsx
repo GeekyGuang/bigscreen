@@ -35,13 +35,21 @@ export const Chart2 = () => {
         },
       },
       legend:{
-        bottom: 0,
-        right: 0,
+        bottom: 3,
+        right: 10,
         itemHeight: 8,
         itemWidth: 16,
         textStyle: {
-          color: '#79839E'
+          color: '#a1d1f1',
+          fontSize: px(14)
         }
+      },
+      grid: {
+        x: px(20),
+        y: px(20),
+        x2: px(30),
+        y2: px(30),
+        containLabel: true,
       },
       series: [
         {

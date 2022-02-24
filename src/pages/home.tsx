@@ -5,6 +5,7 @@ import { Chart1 } from '../components/Chart_1'
 import { Chart2 } from '../components/Chart_2'
 
 export const Home = () => {
+  const year = new Date().getFullYear()
   return (
     <div className="home">
       <header style={{ backgroundImage: `url(${headerBg})` }} />
@@ -18,6 +19,10 @@ export const Home = () => {
         <section className="section4 bordered"></section>
         <section className="section5 bordered"></section>
       </main>
+      <footer>
+      &copy; 某市公安局大数据中心 2020-{year}
+      </footer>
+
     </div>
   )
 }
