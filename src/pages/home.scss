@@ -22,6 +22,15 @@
       -webkit-background-clip: text;
       color: transparent;
     }
+    > span {
+      display: inline-block;
+      margin-top: px(8);
+      font-size: px(30);
+      color: #9d93ef;
+      margin-left: px(1420);
+      transform: scale(.5);
+      transform-origin: left top;
+    }
   }
   > footer {
     color: #2f59ad;

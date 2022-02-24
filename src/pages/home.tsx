@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './home.scss'
 import headerBg from '../images/header.png'
 import { Chart1 } from '../components/Chart_1'
@@ -6,10 +6,17 @@ import { Chart2 } from '../components/Chart_2'
 
 export const Home = () => {
   const year = new Date().getFullYear()
+  const [now, setNow] = useState(new Date().toLocaleString())
+
+  useEffect(() => {
+    setInterval(()=> setNow(new Date().toLocaleString()), 1000)
+  },[])
+
   return (
     <div className="home">
       <header style={{ backgroundImage: `url(${headerBg})` }} >
         <h1>西虹市公安局合成作战平台</h1>
+        <span>{now}</span>
       </header>
       <main>
         <section className="section1">
