@@ -4,6 +4,7 @@ import headerBg from '../images/header.png'
 import { Chart1 } from '../components/Chart_1'
 import { Chart2 } from '../components/Chart_2'
 import { Chart3 } from '../components/Chart_3'
+import { Chart4 } from '../components/Chart_4'
 
 export const Home = () => {
   const year = new Date().getFullYear()
@@ -26,6 +27,7 @@ export const Home = () => {
         </section>
         <section className="section2">
           <Chart3 />
+          <Chart4 />
         </section>
         <section className="section3 bordered"></section>
         <section className="section4 bordered"></section>
