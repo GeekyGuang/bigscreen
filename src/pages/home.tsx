@@ -6,6 +6,7 @@ import { Chart2 } from '../components/Chart_2'
 import { Chart3 } from '../components/Chart_3'
 import { Chart4 } from '../components/Chart_4'
 import { Chart5 } from '../components/Chart_5'
+import { Chart6 } from '../components/Chart_6'
 
 export const Home = () => {
   const year = new Date().getFullYear()
@@ -33,7 +34,9 @@ export const Home = () => {
         <section className="section3 bordered">
           <Chart5 />
         </section>
-        <section className="section4 bordered"></section>
+        <section className="section4">
+          <Chart6 />
+        </section>
         <section className="section5 bordered"></section>
       </main>
       <footer>&copy; 西虹市公安局大数据中心 2020-{year}</footer>
