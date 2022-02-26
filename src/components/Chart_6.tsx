@@ -5,10 +5,17 @@ import { createEchartsOptions } from '../shared/create-echart-options'
 import { px } from '../shared/px'
 
 export const Chart6 = () => {
-  // const [count, setCount] = useState(37278)
-  // setInterval(() => {
-  //   setCount(count + 1)
-  // }, 800)
+  const [count, setCount] = useState(325920)
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCount(count + 1)
+    }, 500)
+
+    return () => {
+      clearInterval(timer)
+    }
+  }, [count])
+
   const divRef = useRef(null)
   useEffect(() => {
     let index = -1
@@ -110,7 +117,7 @@ export const Chart6 = () => {
           type: 'map',
           mapType: 'XH', // 自定义扩展图表类型
           aspectScale: 1,
-          layoutCenter: ['50%', '47%'], //地图位置
+          layoutCenter: ['49%', '47%'], //地图位置
           layoutSize: '90%', // 缩放比例
           itemStyle: {
             color: 'transparent', // 去除坐标小圆点
@@ -139,11 +146,15 @@ export const Chart6 = () => {
       <h2>全市案件侦破实时记录</h2>
       <div ref={divRef} className="chart" />
       <div className="scan-animation">
-      <div className="ring">
-          <div className="radar"/></div>
-          <span>数据实时监控中</span>
+        <div className="ring">
+          <div className="radar" />
+        </div>
+        <span>数据实时监控中</span>
       </div>
-      {/* <div className="bordered">{count}</div> */}
+      <div className="bordered note">
+        <span>{count.toLocaleString('en-US')}</span>
+        <span>接待访客</span>
+      </div>
     </div>
   )
 }
