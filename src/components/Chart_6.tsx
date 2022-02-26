@@ -97,15 +97,7 @@ export const Chart6 = () => {
             trigger: 'item',
             formatter: function (item) {
               var tipHtml = ''
-              tipHtml = `<div style="padding: .6rem .8rem;font-size: .325rem;color:#fff;border-radius:10%;background: linear-gradient(#cccecf, #cccecf) left top,
-                linear-gradient(#cccecf, #cccecf) left top,
-                linear-gradient(#cccecf, #cccecf) right top,
-                linear-gradient(#cccecf, #cccecf) right top,
-                linear-gradient(#cccecf, #cccecf) left bottom,
-                linear-gradient(#cccecf, #cccecf) left bottom,
-                linear-gradient(#cccecf, #cccecf) right bottom,
-                linear-gradient(#cccecf, #cccecf) right bottom;
-            background-repeat: no-repeat;
+              tipHtml = `<div style="padding: .6rem .8rem;font-size: .325rem;color:#fff; border-radius: 4px;
             background-size: .08rem .3rem, .3rem .08rem;background-color:rgba(6, 79, 111,.6);">${item.data.name} <span style="color:#f9eb59;font-size:.4rem">${item.data.value}</span> </div>`
               return tipHtml
             },
@@ -152,7 +144,7 @@ export const Chart6 = () => {
         <span>数据实时监控中</span>
       </div>
       <div className="bordered note">
-        <span>{count.toLocaleString('en-US')}</span>
+        <span>{count.toLocaleString()}</span>
         <span>接待访客</span>
       </div>
     </div>
