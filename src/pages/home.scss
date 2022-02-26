@@ -160,8 +160,83 @@
     }
 
     .籍贯 {
+      position: relative;
       height: px(753);
       background: rgba(15, 17, 58, 0.5);
+      
+      > .scan-animation {
+        position: absolute;
+        bottom: px(20);
+        left: px(20);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: px(6);
+        > span {
+          font-size: px(6);
+          color: #a1d1f1;
+        }
+        > .ring {
+          border: 1px solid #0c2939;
+          width: px(96);
+          height: px(96);
+          border-bottom: none;
+          border-radius: 50%;
+          overflow: hidden;
+          animation: spin infinite 5s linear;
+          > .radar {
+            border: 2px solid #103142;
+            position: absolute;
+            width: px(81);
+            height: px(81);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            &::before {
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: px(42);
+              height: px(42);
+              border: 2px solid #082132;
+              border-radius: 50%;
+            }
+            &::after {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              width: px(3);
+              height: px(36);
+              z-index: 1;
+              background: #007cc0;
+              border-radius: 50%;
+              box-shadow: 0 0 5px 1px #0094e4,
+              -3px -10px 5px 1px #0094e4,
+              -7px -15px 10px 1px #0094e4,
+              -3px -3px 10px 1px #0094e4,
+              -7px -7px 20px 1px #0094e4,
+              -11px -11px 30px 1px #0094e4,
+              -11px -11px 40px 1px #0094e4,
+              -11px -11px 30px 1px #0094e4,
+              -11px -11px 30px 1px #0094e4;
+            }
+          }
+       }
+       @keyframes spin {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+     }
+
     }
   }
 }

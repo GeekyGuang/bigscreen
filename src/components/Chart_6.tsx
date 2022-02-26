@@ -138,6 +138,11 @@ export const Chart6 = () => {
     <div className="bordered 籍贯">
       <h2>全市案件侦破实时记录</h2>
       <div ref={divRef} className="chart" />
+      <div className="scan-animation">
+      <div className="ring">
+          <div className="radar"/></div>
+          <span>数据实时监控中</span>
+      </div>
       {/* <div className="bordered">{count}</div> */}
     </div>
   )
