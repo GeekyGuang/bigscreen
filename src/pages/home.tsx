@@ -7,6 +7,9 @@ import { Chart3 } from '../components/Chart_3'
 import { Chart4 } from '../components/Chart_4'
 import { Chart5 } from '../components/Chart_5'
 import { Chart6 } from '../components/Chart_6'
+import { Chart7 } from '../components/Chart_7'
+import { Chart8 } from '../components/Chart_8'
+import { Chart9 } from '../components/Chart_9'
 
 export const Home = () => {
   const year = new Date().getFullYear()
@@ -36,6 +39,14 @@ export const Home = () => {
         </section>
         <section className="section4">
           <Chart6 />
+          <div className="bordered 年龄段">
+            <h2>犯罪人员年龄段分布</h2>
+            <div className="charts">
+              <Chart7 />
+              <Chart8 />
+              <Chart9 />
+            </div>
+          </div>
         </section>
         <section className="section5 bordered"></section>
       </main>

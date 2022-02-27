@@ -131,6 +131,8 @@ export const Chart6 = () => {
     })
 
     myChart.setOption(createEchartsOptions(option))
+
+    return () => clearInterval(mTime)
   }, [])
 
   return (
