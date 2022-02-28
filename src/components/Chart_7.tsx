@@ -29,12 +29,12 @@ export const Chart7 = () => {
           {
             name: '访问来源',
             type: 'pie',
-            radius: ['55%', '65%'],
+            radius: ['45%', '55%'],
             avoidLabelOverlap: false,
             label: {
               show: true,
-              position: 'inside',
-              textStyle: { color: '#a1d1f1', fontSize: px(20) },
+              position: 'outside',
+              textStyle: { color: '#a1d1f1', fontSize: px(16) },
               formatter(options) {
                 return options.value * 100 + '%'
               },

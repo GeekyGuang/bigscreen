@@ -144,7 +144,7 @@
         width: 100%;
         flex: 1;
         display: flex;
-        padding-bottom: px(30);
+        padding-bottom: px(20);
       }
       &-图1,
       &-图2,
@@ -164,6 +164,11 @@
           }
           > .text {
             position: absolute;
+            width: px(200);
+            height: px(200);
+            display: flex;
+            justify-content: center;
+            align-items: center;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -171,6 +176,8 @@
             font-size: px(40);
             text-shadow: 0 0 px(20) #33a4fa;
             font-weight: bold;
+            border-radius: 50%;
+            border: 1px solid #33a4fa;
           }
         }
       }
