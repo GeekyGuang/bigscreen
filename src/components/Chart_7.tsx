@@ -9,9 +9,10 @@ export const Chart7 = () => {
   useEffect(() => {
     console.log(divRef.current)
     var myChart = echarts.init(divRef.current)
+    const color = ['#8D70F8', '#33A4FA']
     myChart.setOption(
       createEchartsOptions({
-        color: ['#8D70F8', '#33A4FA'],
+        color: color,
         xAxis: { show: false },
         yAxis: { show: false },
         legend: {
@@ -50,7 +51,9 @@ export const Chart7 = () => {
             data: [
               { value: 0.2, name: '女' },
               { value: 0.8, name: '男' },
-            ],
+            ].map((item, index) => {
+              return { ...item, label: { color: color[index] } }
+            }),
           },
         ],
       })

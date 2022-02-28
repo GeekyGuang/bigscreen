@@ -7,11 +7,11 @@ export const Chart8 = () => {
   const divRef = useRef(null)
 
   useEffect(() => {
-    console.log(divRef.current)
     var myChart = echarts.init(divRef.current)
+    const color = ['#856BED', '#F46064', '#F38E1C', '#1CDB7C', '#33A4FA']
     myChart.setOption(
       createEchartsOptions({
-        color: ['#856BED', '#F46064', '#F38E1C', '#1CDB7C', '#33A4FA'],
+        color: color,
         xAxis: { show: false },
         yAxis: { show: false },
         legend: {
@@ -53,7 +53,9 @@ export const Chart8 = () => {
               { value: 0.23, name: '30-40' },
               { value: 0.28, name: '40-50' },
               { value: 0.32, name: '50-60' },
-            ],
+            ].map((item, index) => {
+              return { ...item, label: { color: color[index] } }
+            }),
           },
         ],
       })
