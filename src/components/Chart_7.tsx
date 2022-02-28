@@ -36,7 +36,7 @@ export const Chart7 = () => {
             avoidLabelOverlap: false,
             labelLine: { show: false },
             label: {
-              distanceToLabelLine: -px(20), // label距离引导线距离
+              distanceToLabelLine: -px(23), // label距离引导线距离
               show: true,
               position: 'outside',
               textStyle: { color: '#a1d1f1', fontSize: px(16) },

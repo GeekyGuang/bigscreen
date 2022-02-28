@@ -18,7 +18,7 @@ export const Chart8 = () => {
           bottom: 0,
           itemWidth: px(20),
           itemHeight: px(10),
-          itemGap: px(6),
+          itemGap: px(8),
           textStyle: {
             fontSize: px(16),
             lineHeight: px(16),
@@ -35,7 +35,7 @@ export const Chart8 = () => {
             avoidLabelOverlap: false,
             label: {
               show: true,
-              distanceToLabelLine: -px(20), // label距离引导线距离
+              distanceToLabelLine: -px(23), // label距离引导线距离
               position: 'outside',
               textStyle: { color: '#a1d1f1', fontSize: px(16) },
               formatter(options) {
