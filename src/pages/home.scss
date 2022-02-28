@@ -144,6 +144,59 @@
 
         .chart {
           flex: 1;
+          position: relative;
+          
+          .main {
+            height: 100%;
+            z-index: 10;
+          }
+
+          .ring {
+            position: absolute;
+            left: 50%;
+            top: 42%;
+            transform: translate(-50%, -50%);
+            width: px(200);
+            height: px(200);
+            border: 1px solid #2c82cd;
+            border-radius: 50%;
+
+            &5, &4, &3, &2, &1 {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              border-radius: 50%;
+              border: 1px dashed #0b5a9d;
+            }
+
+            &5 {
+              width: px(170);
+              height: px(170);
+            }
+
+            &4 {
+              width: px(140);
+              height: px(140);
+            }
+
+            &3 {
+              width: px(110);
+              height: px(110);
+            }
+
+            &2 {
+              width: px(80);
+              height: px(80);
+            }
+
+            &1 {
+              width: px(47);
+              height: px(47);
+              border: 3px solid #63c9ff;
+              box-shadow: 0 0 px(6) #33a4fa, inset 0 0 px(6) #33a4fa;
+            }
+          }
         }
       }
       .chart {
