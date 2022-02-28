@@ -10,6 +10,7 @@ import { Chart6 } from '../components/Chart_6'
 import { Chart7 } from '../components/Chart_7'
 import { Chart8 } from '../components/Chart_8'
 import { Chart9 } from '../components/Chart_9'
+import { Chart10 } from '../components/Chart_10'
 
 export const Home = () => {
   const year = new Date().getFullYear()
@@ -51,7 +52,10 @@ export const Home = () => {
         <section className="section5">
           <div className="bordered row1 案发类型">
             <h2>案发类型统计</h2>
-            <div className="charts"></div>
+            <div className="charts">
+              <Chart10 />
+              <div className="chart"></div>
+            </div>
           </div>
           <div className="bordered row2 案发街道">
             <h2>案发街道统计</h2>
