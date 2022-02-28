@@ -29,9 +29,13 @@ export const Chart7 = () => {
           {
             name: '访问来源',
             type: 'pie',
-            radius: ['45%', '55%'],
+            radius: ['50%', '60%'],
+            // 图例位置
+            center: ['50%', '45%'],
             avoidLabelOverlap: false,
+            labelLine: { show: false },
             label: {
+              distanceToLabelLine: -px(20), // label距离引导线距离
               show: true,
               position: 'outside',
               textStyle: { color: '#a1d1f1', fontSize: px(16) },
@@ -39,7 +43,6 @@ export const Chart7 = () => {
                 return options.value * 100 + '%'
               },
             },
-            labelLine: { show: false },
             itemStyle: {
               borderColor: '#0F113A',
               borderWidth: px(4),

@@ -144,32 +144,33 @@
         width: 100%;
         flex: 1;
         display: flex;
-        padding-bottom: px(20);
+        padding-bottom: px(8);
       }
       &-图1,
       &-图2,
       &-图3 {
         flex: 1;
         display: flex;
-        // flex-direction: column;
       }
 
-      &-图1 {
+      &-图1,
+      &-图2 {
         .chart {
           position: relative;
           display: flex;
 
           > .main {
             flex: 1;
+            z-index: 1;
           }
           > .text {
             position: absolute;
-            width: px(200);
-            height: px(200);
+            width: px(190);
+            height: px(190);
             display: flex;
             justify-content: center;
             align-items: center;
-            top: 50%;
+            top: 45%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: #33a4fa;
