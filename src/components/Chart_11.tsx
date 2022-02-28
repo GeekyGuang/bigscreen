@@ -25,6 +25,7 @@ export const Chart11 = () => {
             lineHeight: px(16),
             color: '#a1d1f1',
           },
+          data: ['经济','民事', '刑事', '其他']
         },
         series: [
           {
