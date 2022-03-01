@@ -39,7 +39,7 @@ export const Chart12 = () => {
         grid: { x: 0, x2: 0, y: 0, y2: 0, containLabel: true },
         legend: {
           orient: 'vertical',
-          left: px(20),
+          left: px(24),
           top: 'center',
           icon: 'line',
           itemWidth: px(10),
@@ -62,7 +62,7 @@ export const Chart12 = () => {
             type: 'pie',
             radius: '75%',
             // 图例位置
-            center: ['60%', '50%'],
+            center: ['65%', '50%'],
             avoidLabelOverlap: false,
             labelLine: {
               show: false,
