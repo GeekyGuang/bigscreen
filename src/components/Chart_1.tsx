@@ -48,6 +48,20 @@ export const Chart1 = () => {
         {
           type: 'bar',
           data: [10, 20, 36, 41, 15, 26, 37, 18, 29],
+          itemStyle: {
+            normal: {
+              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                {
+                  offset: 0,
+                  color: '#dc2436',
+                },
+                {
+                  offset: 1,
+                  color: '#dfad56',
+                },
+              ]),
+            },
+          },
           animationEasing: 'bounceIn',
           animationDelay: function (idx) {
             return Math.random() * 200

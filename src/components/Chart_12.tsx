@@ -48,7 +48,7 @@ export const Chart12 = () => {
         textStyle: {
           fontSize: px(12),
           lineHeight: px(12),
-          color: '#6ca8ed',
+          color: '#38a6b4',
         },
         formatter(name) {
           const value =

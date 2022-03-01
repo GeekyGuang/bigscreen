@@ -12,13 +12,13 @@ export const Chart4 = () => {
         type: 'category',
         boundaryGap: false,
         data: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24],
-        splitLine: { show: true, lineStyle: { color: '#073E78' } },
+        splitLine: { show: true, lineStyle: { color: '#074f78' } },
         axisTick: { show: false },
         axisLine: { show: false },
       },
       yAxis: {
         type: 'value',
-        splitLine: { lineStyle: { color: '#073E78' } },
+        splitLine: { lineStyle: { color: '#074f78' } },
         axisLabel: {
           formatter(val) {
             return val * 100 + '%'
@@ -40,7 +40,7 @@ export const Chart4 = () => {
             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
               {
                 offset: 0,
-                color: '#414a9f',
+                color: '#41849f',
               },
               {
                 offset: 1,

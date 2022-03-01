@@ -23,7 +23,7 @@ export const Chart13 = () => {
         data: data.map((i) => i.name),
         axisTick: { show: false },
         axisLine: {
-          lineStyle: { color: '#083B70' },
+          lineStyle: { color: '#085b70' },
         },
         axisLabel: {
           formatter(val) {
@@ -39,7 +39,7 @@ export const Chart13 = () => {
       yAxis: {
         axisLine: {
           show: true,
-          lineStyle: { color: '#083B70' },
+          lineStyle: { color: '#085b70' },
         },
         // 隐藏网格线
         splitLine: {
@@ -56,12 +56,12 @@ export const Chart13 = () => {
             normal: {
               color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
                 {
-                  offset: 1,
-                  color: '#2034f9',
+                  offset: 0,
+                  color: '#38f7d1',
                 },
                 {
-                  offset: 0,
-                  color: '#04a1ff',
+                  offset: 1,
+                  color: '#1ba1db',
                 },
               ]),
             },
