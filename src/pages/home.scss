@@ -7,7 +7,7 @@
   background: #010310;
   color: #d7e8ff;
   > header {
-    height: px(99);
+    height: px(102);
     background-size: cover;
     width: px(2420);
     margin: 0 auto;
@@ -17,7 +17,7 @@
       font-size: px(44);
       text-align: center;
       margin-top: px(20);
-      background-image: linear-gradient(180deg, #b2d6f6, #0fa0ef);
+      background-image: linear-gradient(180deg, #b2d6f6, #00f5ff);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
@@ -26,7 +26,7 @@
       display: inline-block;
       margin-top: px(8);
       font-size: px(30);
-      color: #9d93ef;
+      color: #ffe400;
       margin-left: px(1420);
       transform: scale(0.5);
       transform-origin: left top;
@@ -47,7 +47,7 @@
   > main {
     width: px(2420);
     margin: 0 auto;
-    padding-top: px(30);
+    padding-top: px(27);
     flex: 1;
     display: grid;
     grid-template:
@@ -302,7 +302,7 @@
             height: px(50);
             width: px(88);
             background: #1c2456;
-            animation: rotateX 4s infinite ease-in-out;
+            animation: rotateX 4s 1s infinite ease-in-out;
           }
         }
       }
