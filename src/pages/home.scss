@@ -302,8 +302,21 @@
             height: px(50);
             width: px(88);
             background: #1c2456;
+            animation: rotateX 4s infinite ease-in-out;
           }
         }
+      }
+    }
+
+    @keyframes rotateX {
+      0% {
+        transform: rotateX(0deg);
+      }
+      75% {
+        transform: rotateX(0deg);
+      }
+      100% {
+        transform: rotateX(360deg);
       }
     }
 
@@ -312,13 +325,13 @@
         margin-top: px(28);
         thead {
           th {
-            height: px(60);
+            height: px(50);
           }
         }
         tbody {
           td {
             font-size: px(12);
-            height: px(28);
+            height: px(29);
             width: px(170);
           }
         }

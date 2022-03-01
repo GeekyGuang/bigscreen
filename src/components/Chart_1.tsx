@@ -48,11 +48,17 @@ export const Chart1 = () => {
         {
           type: 'bar',
           data: [10, 20, 36, 41, 15, 26, 37, 18, 29],
+          animationEasing: 'bounceIn',
         },
       ],
     })
 
     myChart.setOption(option)
+
+    setInterval(() => {
+      myChart.clear()
+      myChart.setOption(option)
+    }, 4000)
   }, [])
   return (
     <div className="bordered 管辖统计">

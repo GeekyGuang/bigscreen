@@ -34,15 +34,15 @@ export const Chart2 = () => {
           },
         },
       },
-      legend:{
+      legend: {
         bottom: 3,
         right: 10,
         itemHeight: 8,
         itemWidth: 16,
         textStyle: {
           color: '#a1d1f1',
-          fontSize: px(14)
-        }
+          fontSize: px(14),
+        },
       },
       grid: {
         x: px(20),
@@ -56,17 +56,21 @@ export const Chart2 = () => {
           name: '2020年',
           type: 'bar',
           data: [1, 5, 3, 4, 5, 9, 7, 8, 9],
+          animationEasing: 'elasticOut',
           itemStyle: {
             normal: {
-              color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
-                offset: 0,
-                color: '#2034f9'
-              }, {
-                offset: 1,
-                color: '#04a1ff'
-              }]),
-            }
-          }
+              color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+                {
+                  offset: 0,
+                  color: '#2034f9',
+                },
+                {
+                  offset: 1,
+                  color: '#04a1ff',
+                },
+              ]),
+            },
+          },
         },
         {
           name: '2021年',
@@ -74,20 +78,28 @@ export const Chart2 = () => {
           data: [2, 3, 2, 7, 3, 7, 9, 6, 12],
           itemStyle: {
             normal: {
-              color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
-                offset: 0,
-                color: '#b92ae8'
-              }, {
-                offset: 1,
-                color: '#6773e7'
-              }]),
-            }
-          }
+              color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+                {
+                  offset: 0,
+                  color: '#b92ae8',
+                },
+                {
+                  offset: 1,
+                  color: '#6773e7',
+                },
+              ]),
+            },
+          },
         },
       ],
     })
 
     myChart.setOption(option)
+
+    setInterval(() => {
+      myChart.clear()
+      myChart.setOption(option)
+    }, 4000)
   }, [])
   return (
     <div className="bordered 破获排名">
