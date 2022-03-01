@@ -40,6 +40,12 @@ export const Chart14 = () => {
           <td>22</td>
         </tr>
         <tr>
+          <td>诈骗</td>
+          <td>电信诈骗</td>
+          <td>102</td>
+          <td>102</td>
+        </tr>
+        <tr>
           <td rowSpan={3}>扒窃</td>
           <td>公交车扒窃</td>
           <td>40</td>
@@ -52,16 +58,6 @@ export const Chart14 = () => {
         <tr>
           <td>街面扒窃</td>
           <td>45</td>
-        </tr>
-        <tr>
-          <td rowSpan={2}>诈骗</td>
-          <td>甩票子诈骗</td>
-          <td>32</td>
-          <td rowSpan={2}>102</td>
-        </tr>
-        <tr>
-          <td>买手机诈骗</td>
-          <td>80</td>
         </tr>
       </tbody>
     </table>
