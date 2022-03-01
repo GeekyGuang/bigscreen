@@ -67,6 +67,9 @@ export const Chart13 = () => {
             },
           },
           animationEasing: 'bounceIn',
+          animationDelay: function (idx) {
+            return Math.random() * 200
+          },
         },
       ],
     })

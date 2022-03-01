@@ -46,6 +46,9 @@ export const Chart9 = () => {
             ]),
           },
           animationEasing: 'cubicOut',
+          animationDelay: function (idx) {
+            return Math.random() * 200
+          },
         },
       ],
     })

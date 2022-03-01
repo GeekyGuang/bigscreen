@@ -49,6 +49,9 @@ export const Chart1 = () => {
           type: 'bar',
           data: [10, 20, 36, 41, 15, 26, 37, 18, 29],
           animationEasing: 'bounceIn',
+          animationDelay: function (idx) {
+            return Math.random() * 200
+          },
         },
       ],
     })

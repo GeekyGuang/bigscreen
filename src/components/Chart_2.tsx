@@ -57,6 +57,9 @@ export const Chart2 = () => {
           type: 'bar',
           data: [1, 5, 3, 4, 5, 9, 7, 8, 9],
           animationEasing: 'elasticOut',
+          animationDelay: function (idx) {
+            return Math.random() * 200
+          },
           itemStyle: {
             normal: {
               color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [

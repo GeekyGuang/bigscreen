@@ -55,6 +55,9 @@ export const Chart10 = () => {
             },
           },
           animationEasing: 'quinticIn',
+          animationDelay: function (idx) {
+            return Math.random() * 200
+          },
         },
       ],
     })
