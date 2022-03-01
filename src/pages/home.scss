@@ -145,7 +145,7 @@
         .chart {
           flex: 1;
           position: relative;
-          
+
           .main {
             height: 100%;
             z-index: 10;
@@ -161,7 +161,11 @@
             border: 1px solid #2c82cd;
             border-radius: 50%;
 
-            &5, &4, &3, &2, &1 {
+            &5,
+            &4,
+            &3,
+            &2,
+            &1 {
               position: absolute;
               left: 50%;
               top: 50%;
@@ -274,7 +278,9 @@
       }
     }
 
-    .战果 {
+    .战果,
+    .作案手段 {
+      overflow: hidden;
       table {
         margin-top: px(38);
         border-collapse: collapse;
@@ -296,6 +302,24 @@
             height: px(50);
             width: px(88);
             background: #1c2456;
+          }
+        }
+      }
+    }
+
+    .作案手段 {
+      table {
+        margin-top: px(28);
+        thead {
+          th {
+            height: px(44);
+          }
+        }
+        tbody {
+          td {
+            font-size: px(12);
+            height: px(28);
+            width: px(170);
           }
         }
       }
