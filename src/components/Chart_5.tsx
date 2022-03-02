@@ -6,14 +6,16 @@ export const Chart5 = () => {
       <h2>往年战果数对比</h2>
       <table>
         <thead>
-          <th>类型</th>
-          <th>破案数</th>
-          <th>抓获嫌疑人</th>
-          <th>并串案件</th>
-          <th>现堪录入</th>
-          <th>视帧录入</th>
-          <th>合成案件数</th>
-          <th>合计</th>
+          <tr>
+            <th>类型</th>
+            <th>破案数</th>
+            <th>抓获嫌疑人</th>
+            <th>并串案件</th>
+            <th>现堪录入</th>
+            <th>视帧录入</th>
+            <th>合成案件数</th>
+            <th>合计</th>
+          </tr>
         </thead>
         <tbody>
           <tr>
