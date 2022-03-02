@@ -43,7 +43,7 @@ export const Chart8 = () => {
           },
           labelLine: { show: false },
           itemStyle: {
-            borderColor: '#0F113A',
+            borderColor: '#052831',
             borderWidth: px(4),
           },
           data: [

@@ -44,7 +44,7 @@ export const Chart7 = () => {
             },
           },
           itemStyle: {
-            borderColor: '#0F113A',
+            borderColor: '#052831',
             borderWidth: px(4),
           },
           data: [
