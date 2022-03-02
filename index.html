@@ -10,7 +10,7 @@
     #loading.active {
       position: fixed;
       left: 50%;
-      top: 20%;
+      top: 30%;
       transform: translate(-50%, -50%);
       width: 50px;
       height: 50px;
@@ -25,7 +25,7 @@
       bottom: 0;
       right: 0;
       margin: auto;
-      background: #b4b8f9;
+      background: #00f5ff;
       border-radius: 50%;
       animation: wave 1.5s infinite linear;
     }
@@ -51,7 +51,7 @@
   <script>
     const clientWidth = document.documentElement.clientWidth
     const clientHeight = document.documentElement.clientHeight
-    window.pageWidth = clientWidth / clientHeight > 16 / 9 ? clientHeight * (16 / 9) : clientWidth
+    window.pageWidth = clientWidth / clientHeight > 16 / 9 ? clientHeight * (16 / 9) : 1400
     const pageHeight = pageWidth / (16 / 9)
     const string = `<style>html{
       font-size: ${pageWidth / 100}px
@@ -67,7 +67,7 @@
   <script>
     //root.style.width = pageWidth + 'px'
     root.style.height = pageHeight + 'px'
-    root.style.marginTop = (clientHeight - pageHeight) / 2 + 'px'
+    root.style.marginTop = pageHeight < clientHeight ? (clientHeight - pageHeight) / 2 + 'px' : 0
   </script>
   <script type="module" src="/src/main.tsx"></script>
 </body>
