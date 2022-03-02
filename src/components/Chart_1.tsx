@@ -62,10 +62,7 @@ export const Chart1 = () => {
               ]),
             },
           },
-          animationEasing: 'bounceIn',
-          animationDelay: function (idx) {
-            return Math.random() * 200
-          },
+          animationEasing: 'cubicOut',
         },
       ],
     })

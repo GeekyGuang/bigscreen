@@ -74,9 +74,6 @@ export const Chart3 = () => {
         symbolSize: px(12),
         lineStyle: { width: px(2) },
         animationEasing: 'elasticInOut',
-        animationDelay: function (idx) {
-          return Math.random() * 200
-        },
       })),
     })
 

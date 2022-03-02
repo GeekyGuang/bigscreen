@@ -54,7 +54,7 @@ export const Chart10 = () => {
               ]),
             },
           },
-          animationEasing: 'quinticIn',
+          animationEasing: 'cubicIn',
           animationDelay: function (idx) {
             return Math.random() * 200
           },

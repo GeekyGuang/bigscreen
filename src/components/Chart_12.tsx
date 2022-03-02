@@ -73,6 +73,7 @@ export const Chart12 = () => {
           data: data.map((item, index) => {
             return { ...item, label: { color: color[index] } }
           }),
+          animationEasing: 'cubicInOut',
         },
       ],
     })
